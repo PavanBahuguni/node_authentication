@@ -107,4 +107,8 @@ app.use(function(err, req, res, next) {
 });
 
 
-module.exports = app;
+
+//Use port by reading to environment variable(this will be helpful during producrion) 
+app.listen(process.env.PORT || 3000, function(){
+	console.log("Server started listening on:",(process.env.PORT||3000));
+});
