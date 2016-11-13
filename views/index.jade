@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 Welcome to Members Area
+  p This page is only accessible to logged in users!
+  table.table-custom.table-condensed.table(border="1")
+    tr
+      th.borders Username
+      th= user.username
+    tr
+      th Email
+      th= user.email
+    if user.isVerified
+      tr
+        th IsVerified
+        th Email id is verified
+    else
+      tr
+        th IsVerified
+        th Email id is not verified
+    tr
+        th Encrypted Password
+        th= user.password
+    tr
+        th Verification Code
+        th= user.varifyCode	

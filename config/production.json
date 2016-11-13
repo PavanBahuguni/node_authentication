@@ -1,0 +1,5 @@
+{
+	"dbURL":"mongodb://rootmongouser:root123456@ds139267.mlab.com:39267/node_auth",
+	"sessionSecret":"abcdefghijkl"
+	
+}

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Register Area
+  p Please login below
+  form(method='post', action='login',enctype="application/x-www-form-urlencoded")
+       .form-group
+           label Username
+           input.form-control(name='username', type='text',placeholder='Enter username',style="width:40%;")
+       .form-group
+           label Password
+           input.form-control(name='password', type='password',placeholder='Enter password',style="width:40%;")
+       input.btn.btn-default(name='submit', type='submit', value='Login')
