@@ -118,7 +118,9 @@ router.get('/authenticate/:mail/:verification',function(req,res){
 	var secret = req.params.verification;
 	console.log("verifying email");
 	User.verifyEmail(username,secret, function(err, isVerified){
-		console.log("Testing**********",isVerified);
+		req.flash('success', 'Your email id is verified!!');
+		res.location('/');
+		res.redirect('/');
 	});
 });
 
