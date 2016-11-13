@@ -128,7 +128,7 @@ module.exports.verifyEmail = function(username, secret, callback){
 
 function sendMail(newUser,verifyId){
   var subject='Email verification link for Node_Auth';
-  var text='https://node-authenticater.herokuapp.com/'+newUser.username+'/'+verifyId;
+  var text='https://node-authenticater.herokuapp.com/users/authenticate/'+newUser.username+'/'+verifyId;
   var mailOptions={
     to : newUser.email,
     subject : subject,
