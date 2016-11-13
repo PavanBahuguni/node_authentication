@@ -38,8 +38,8 @@ if(env === 'development'){
 var smtpTransport = nodemailer.createTransport("SMTP",{
     service: "Gmail",
     auth: {
-        user: "pavanbahuguni15@gmail.com",
-        pass: "#444*9#Pavan"
+        user: "",
+        pass: ""
     }
 });
 
